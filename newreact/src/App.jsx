@@ -40,6 +40,24 @@ import Avatar from "./assets/Process";
 //   );
 // }
 import Render from "../render.jsx";
-export default function () {
-  return <>{<Render />}</>;
+// export default function () {
+//   return <>{<Render />}</>;
+// }
+import Chai from "../Chai.jsx";
+function Cup({ guests }) {
+  return (
+    <>
+      <h2>Tea Served to Guest {guests}</h2>
+    </>
+  );
+}
+
+export default function Check() {
+  return (
+    <>
+      {<Cup guests={1} />}
+      {<Cup guests={2} />}
+      {<Cup guests={3} />}
+    </>
+  );
 }
